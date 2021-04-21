@@ -1,5 +1,8 @@
 output "data_source" {
-  value = grafana_data_source.this
+    value = {
+    id   = grafana_data_source.this.id
+    name = grafana_data_source.this.name
+  }
 }
 
 output "folder" {
