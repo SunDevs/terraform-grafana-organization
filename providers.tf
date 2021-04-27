@@ -6,3 +6,9 @@ terraform {
     }
   }
 }
+
+provider "grafana" {
+  url    = var.GRAFANA_URL
+  auth   = var.GRAFANA_AUTH
+  org_id = var.GRAFANA_ORG_ID
+}
