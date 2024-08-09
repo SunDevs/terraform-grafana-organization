@@ -29,3 +29,9 @@ variable "GRAFANA_ORG_ID" {
   type        = number
   description = "(Required) The organization id to operate on within grafana."
 }
+
+variable "FOLDER_NAME" {
+  type        = string
+  description = "(Required) The name of the folder to operate on within grafana."
+  default     = "General"
+}

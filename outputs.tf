@@ -1,5 +1,5 @@
 output "data_source" {
-    value = {
+  value = {
     id   = grafana_data_source.this.id
     name = grafana_data_source.this.name
   }
