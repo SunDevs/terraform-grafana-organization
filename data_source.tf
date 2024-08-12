@@ -2,7 +2,7 @@ resource "grafana_data_source" "this" {
   type = "cloudwatch"
   name = var.NAME
   json_data_encoded = jsonencode({
-    authType      = "default"
+    authType      = "keys"
     defaultRegion = var.AWS_DEFAULT_REGION
   })
 
